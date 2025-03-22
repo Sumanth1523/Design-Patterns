@@ -1,0 +1,71 @@
+@startuml
+
+enum Validity{
+    YES,
+    NO,
+    UNDEFINED
+}
+
+class State
+{
+   #states: StateBlock
+   #count: int
+   #card_inserted: bool
+   #card_validity: Validity
+   +insert_credit_card(): State
+   +check_validity(): State
+   +take_ticket(): State
+   +remove_card(): State
+}
+
+class READY
+{
+   -insert_credit_card(): State
+   -check_validity(): State
+   -take_ticket(): State
+   -remove_card(): State
+}
+
+class VALIDATING
+{
+   -insert_credit_card(): State
+   -check_validity(): State
+   -take_ticket(): State
+   -remove_card(): State
+}
+
+class TICKET_SOLD
+{
+   -insert_credit_card(): State
+   -check_validity(): State
+   -take_ticket(): State
+   -remove_card(): State
+}
+
+class SOLD_OUT
+{
+   -insert_credit_card(): State
+   -check_validity(): State
+   -take_ticket(): State
+   -remove_card(): State
+}
+
+class StateBlock
+{
+    -friend READY
+    -friend VALIDATING
+    -friend TICKET_SOLD
+    -friend SOLD_OUT
+}
+
+READY --|> State
+VALIDATING --|> State
+TICKET_SOLD --|> State
+SOLD_OUT --|> State
+
+READY --up[hidden]--> State
+
+VALIDATING --up[hidden]--> State
+TICKET_SOLD --up[hidden]--> State
+SOLD_OUT --up[hidden]--> State
+@enduml

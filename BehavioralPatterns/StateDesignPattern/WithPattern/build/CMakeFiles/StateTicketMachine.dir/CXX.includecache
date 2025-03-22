@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/Enums.h
+iostream
+-
+
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/State.h
+string
+-
+Enums.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/Enums.h
+
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/StatesBlock.h
+State.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/State.h
+
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/TicketMachine.h
+time.h
+-
+Enums.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/Enums.h
+State.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/State.h
+StatesBlock.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/StatesBlock.h
+
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/main.cpp
+iostream
+-
+inc/TicketMachine.h
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/inc/TicketMachine.h
+

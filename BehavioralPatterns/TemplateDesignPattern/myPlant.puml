@@ -1,0 +1,26 @@
+@startuml MyData
+allowmixing
+
+
+
+abstract class AlgorithmOutline
+{
+   +templateMethod()
+   #implementedStep1()
+   #implementedStep1()
+   #VaryingStep1()
+   #VaryingStep2()
+}
+
+class ConcreteAlgorithm
+{
+   -VaryingStep1()
+   -VaryingStep2()
+}
+
+AlgorithmOutline <|-- ConcreteAlgorithm
+
+note top of ConcreteAlgorithm
+    It will give the definition to the varying steps
+end note
+@enduml

@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++17   CMakeFiles/StateTicketMachine.dir/main.cpp.o CMakeFiles/StateTicketMachine.dir/src/READY.cpp.o CMakeFiles/StateTicketMachine.dir/src/SOLD_OUT.cpp.o CMakeFiles/StateTicketMachine.dir/src/TICKET_SOLD.cpp.o CMakeFiles/StateTicketMachine.dir/src/VALIDATING.cpp.o CMakeFiles/StateTicketMachine.dir/src/TicketMachine.cpp.o  -o StateTicketMachine 

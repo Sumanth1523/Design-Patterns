@@ -1,0 +1,3 @@
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/build/CMakeFiles/rebuild_cache.dir
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/build/CMakeFiles/edit_cache.dir
+/home/disanth/MyPractise/DesignPatterns/StateDesignPattern/WithPattern/build/CMakeFiles/StateTicketMachine.dir
